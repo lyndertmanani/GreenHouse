@@ -2,11 +2,11 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-    backdropFilter: {
-      'none': 'none',
-      'blur': 'blur(20px)',
+    extend: {
+      colors: {
+        'border-color': 'red !important',
+      },
     },
-    extend: {},
   },
 plugins: [require("daisyui")],
 }

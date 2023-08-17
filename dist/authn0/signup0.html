@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+   
+    <title>Register | GreenHouse</title>
+</head>
+<body class="text-gray-800 font-poppins">
+    <div style="background-image: url('../assets/cove ')"   class="w-full h-screen bg-no-repeat bg-cover bg-center bg-white">
+          <!-- login-starts-here -->
+      <div class="flex justify-center items-center pt-20 mx-5">
+          <form action=" " method="get" class="w-full max-w-sm h-auto" id="myForm">
+            <div class="flex items-center justify-center mb-4">
+              <h1 class="text-green-900 justify-center  text-3xl font-bold ">GreenHouse</h1>
+              <!-- <img src="../../assets/icons/pa sho yo-ticket_wht.png" class="h-14" alt="PashoyoMw_logo"> -->
+            </div>
+            <div class="flex justify-center mt-3">
+              <div class="inline text-green-800 ">
+                <input type="text" id="firstname" class="w-full px-4 py-2 mb-2 border-gray-500 border-spacing-1 outline-none rounded-md bg-gray-400 bg-opacity-40" placeholder="Firstname" />
+                  <input type="text" id="surname" class="w-full px-4 py-2 mb-2 border-gray-500 border-spacing-1 outline-none rounded-md bg-gray-400 bg-opacity-40" placeholder="Surname" />
+                    <input type="text" id="username" class="w-full px-4 py-2 mb-2 border-gray-500 border-spacing-1 outline-none rounded-md bg-gray-400 bg-opacity-40" placeholder="Username" />
+                    <input type="email" id="email" class="w-full px-4 py-2 mb-2 border-none outline-none rounded-md bg-gray-400 bg-opacity-40" placeholder="E-mail" />
+                    <input type="tel" id="phone" class="w-full px-4 py-2 mb-2 border-none outline-none rounded-md bg-gray-400 bg-opacity-40" placeholder="Mobile" />
+                    <input type="password" id="password" class="w-full px-4 py-2 mb-2 border-none outline-none rounded-md bg-gray-400 bg-opacity-40" placeholder="Password" />
+
+                <div id="password-strength" class="px-2"></div>
+               
+            </div>
+            </div>
+            <div class="flex justify-center mt-1">               
+                <input type="submit" value="Sign Up" class="w-3/4 px-4 py-1.5 mb-2 border-none outline-none rounded-md cursor-pointer bg-green-900 text-slate-200 hover:text-white hover:bg-opacity-90 duration-100 "   />
+              </div>
+              <div class="flex justify-center mt-1">    
+              <div class="inline-flex">
+                <p class="mr-2 hover:underline hover:text-green-800"> <a  class="mr-2" href="./index.html">I already have an account</a></p>
+                 <!-- <p class="mr-2 hover:underline hover:text-green-800"> <a  class="mr-2" href="#">I already have an account</a>|</p>
+                 <p class="mr-2 hover:underline hover:text-green-800"><a  class="mr-2" href="#">Help</a> -->
+                </div>
+              </div>
+          </form>
+        </div>
+    </div>
+
+<script src="../../bower_components/zxcvbn/dist/zxcvbn.js"></script>
+ <script src="../main.js"></script>
+
+  
+    <!-- footer -->
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <div>
+          <p>Copyright © 2023 - All right reserved by GreenHouse Ltd</p>
+        </div>
+      </footer>
+</body>
+</html>
