@@ -1,0 +1,148 @@
+<mxfile host="65bd71144e">
+    <diagram id="ClrrZSHuDguVVyM5EnFx" name="Page-1">
+        <mxGraphModel dx="1247" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="42" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;/p&gt;&lt;h1 style=&quot;line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;Index&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 140%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;The index page will display what the Greenhouse is and what it is capable , that includes;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;01. Services&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;02.Service Center&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;03. Showcase work&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;04. Php scripts that will create the database&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 130%; font-size: 13px;&quot;&gt;&lt;font color=&quot;#ff9933&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;b&gt;NOTE: Might link part of the system to a cloud server (firebase)&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="720" width="360" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Framework&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="20" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;. Tailwind&lt;br&gt;. DaisyUi&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="70" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="380" y="230" width="380" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Data" style="shape=datastore;whiteSpace=wrap;html=1;fontSize=10;" parent="41" vertex="1">
+                    <mxGeometry x="150" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;fontSize=10;" parent="41" source="33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="70" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="Crop type" style="rounded=0;whiteSpace=wrap;html=1;" parent="41" vertex="1">
+                    <mxGeometry x="130" y="140" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="41" source="30" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="455" y="-310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="Disease" style="rounded=0;whiteSpace=wrap;html=1;" parent="41" vertex="1">
+                    <mxGeometry y="220" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Treatment" style="whiteSpace=wrap;html=1;rounded=0;" parent="41" vertex="1">
+                    <mxGeometry x="220" y="215" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=none;html=1;fontSize=10;" parent="41" source="35" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Market" style="rounded=0;whiteSpace=wrap;html=1;" parent="41" vertex="1">
+                    <mxGeometry x="310" y="140" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="edgeStyle=none;html=1;fontSize=10;" parent="41" source="33" target="38" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=30;fontColor=#FF9933;" parent="1" source="42" target="43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="edgeStyle=none;html=1;fontSize=30;fontColor=#FFB366;" parent="1" source="43" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;/p&gt;&lt;h1 style=&quot;line-height: 0%;&quot;&gt;&lt;span style=&quot;font-size: 30px;&quot;&gt;Authn&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 140%; font-size: 13px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;The system can be use&amp;nbsp; by an individual or a group.&amp;nbsp; As an individual the user will just sign up directly.&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;If the system is being used by a group only the Admin/Group leader will be able to create a group,sign up and add members in that specific group.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffb366&quot;&gt;&lt;b&gt;&lt;i&gt;(The group memebrs will have access to update there passwords only)&lt;/i&gt;&lt;/b&gt;&amp;nbsp;&lt;/font&gt;&lt;font color=&quot;#ffffff&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="720" width="360" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="110" y="30" width="150" height="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;" parent="45" source="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="Index" style="rounded=0;whiteSpace=wrap;html=1;" parent="45" vertex="1">
+                    <mxGeometry width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;" parent="45" source="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="Login" style="rounded=0;whiteSpace=wrap;html=1;" parent="45" vertex="1">
+                    <mxGeometry y="130" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;fontSize=19;" parent="45" source="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="62.5" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;exitX=0.855;exitY=0;exitDx=0;exitDy=2.03;exitPerimeter=0;fontSize=10;" parent="45" source="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="92.73684210526312" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=7;" parent="45" vertex="1">
+                    <mxGeometry x="20" y="250" width="85" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;fontSize=19;" parent="45" source="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="75" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;fontSize=19;" parent="45" source="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="75" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="API" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=19;" parent="45" vertex="1">
+                    <mxGeometry y="360" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Dashboard" style="rounded=0;whiteSpace=wrap;html=1;" parent="45" vertex="1">
+                    <mxGeometry x="20" y="480" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Greenhouse&lt;br&gt;Group" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="45" vertex="1">
+                    <mxGeometry x="15" y="580" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;fontSize=10;entryX=0;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="27" target="30" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;fontSize=30;fontColor=#FFB366;" parent="1" source="19" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;/p&gt;&lt;h1 style=&quot;line-height: 0%;&quot;&gt;&lt;span style=&quot;font-size: 30px;&quot;&gt;&lt;font color=&quot;#ff9933&quot;&gt;DataBase&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 140%; font-size: 13px;&quot;&gt;&lt;font color=&quot;#ff9933&quot;&gt;It will be used to store&amp;nbsp; login creds.&amp;nbsp; farm details including progress on the field.&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="1000" width="360" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" style="edgeStyle=none;html=1;entryX=1.001;entryY=0.396;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=30;fontColor=#FFB366;" parent="1" source="48" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=none;html=1;fontSize=30;fontColor=#FF9933;" parent="1" source="48" target="54" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="850" y="1033.0555555555557" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;html=1;fontSize=28;fontColor=#FFFFFF;" parent="1" source="48" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="630.0000000000002" y="1220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=30;fontColor=#FFB366;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="990" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;/p&gt;&lt;h1 style=&quot;line-height: 0%;&quot;&gt;&lt;span style=&quot;font-size: 30px;&quot;&gt;API&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 140%; font-size: 13px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;Will be use used to prodive data as listed below;&lt;/font&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 140%; font-size: 13px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;01.&amp;nbsp; Weather&lt;/font&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 140%; font-size: 13px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;02.&amp;nbsp; Geo location &lt;/font&gt;&lt;font color=&quot;#ffb366&quot;&gt;&lt;i&gt;(if free)&lt;/i&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;i style=&quot;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;03.&amp;nbsp; Login/Sign up&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="970" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;/p&gt;&lt;h1 style=&quot;line-height: 0%;&quot;&gt;&lt;span style=&quot;font-size: 30px;&quot;&gt;Dashboard&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 140%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;The index page will display what the Greenhouse is and what it is capable , that includes;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;01. Services&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;02.Service Center&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;03. Showcase work&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;04. Php scripts that will create the database&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 130%; font-size: 13px;&quot;&gt;&lt;font color=&quot;#ff9933&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;b&gt;NOTE: Might link part of the system to a cloud server (firebase)&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="1220" width="360" height="180" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
