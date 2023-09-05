@@ -12,7 +12,9 @@
 </head>
 <body class="font-poppins bg-white">
     <!-- side nav -->
-<div class="min-h-screen   flex-row bg-gray-100 hidden md:flex lg:flex">
+<div class="static">
+    <!-- <nav class=" hidden md:flex lg:flex"> -->
+    <div class="min-h-screen   flex-row bg-gray-100  hidden md:flex lg:flex">
   <div class="flex flex-col w-56 bg-white rounded-r-3xl overflow-hidden">
     <div class="flex items-center justify-center h-20 shadow-md">
         <a class="normal-case text-green-600 font-bold text-[30px] ">GreenHouse</a>
@@ -26,13 +28,13 @@
       </li>
       <li>
         <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
-          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-music"></i></span>
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-cloud-light-rain"></i></span>
           <span class="text-sm font-medium">Weather</span>
         </a>
       </li>
       <li>
         <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
-          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-drink"></i></span>
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-group"></i></span>
           <span class="text-sm font-medium">Members</span>
         </a>
       </li>
@@ -51,13 +53,23 @@
         </a>
       </li>
       <li>
-        <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+        <a href="../authn0/index.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
           <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
           <span class="text-sm font-medium">Logout</span>
         </a>
       </li>
     </ul>
-  </div>
+</div>
+<!-- </nav> -->
+
+<!-- default system -->
+<div class="  px-5  mt-10 w-full h-full">
+    <div class="bg-white w-ful h-32   shadow-sm hover:shadow-md  rounded-md">
+        <span class="inline-flex items-center p-10  justify-center align-middle text-xl text-gray-600"><p class=" text-4xl ">22.3 °c</p><img src="../assets/icon/weather/day/113.png" alt="" srcset=""></i></span>
+    </div>
+<div class="inline-flex my-6 h-auto ">
+<div class="w-[720px] h-96 bg-white shadow-sm rounded-md hover:shadow-md"></div>
+<div class="w-96 h-96 bg-white ml-6 shadow-sm  hover:shadow-md"></div>
 </div>
 
 
@@ -67,6 +79,26 @@
 
 
 
+<!-- default sys closed here -->
+</div>
+<!-- main div closed here -->
+</div>
+
+<div class="">
+
+</div>
+
+<div class="btm-nav lg:hidden bg-white">
+    <button class="text-lg text-gray-700">
+        <i class="bx bx-user-check"></i>
+     </button>
+    <button class="text-lg text-gray-700">
+        <i class="bx bx-group text-lg"></i>
+     </button>
+    <button class="text-lg text-gray-700">
+        <i class="bx bx-log-out"></i>
+        </button>
+  </div>
 
 
 </body>
