@@ -58,6 +58,12 @@
           <span class="text-sm font-medium">Logout</span>
         </a>
       </li>
+      <li>
+        <a href="" id="connectButton" class="flex flex-row items-center h-12 transform hover:translate-x-1 transition-transform ease-in duration-200 bg-green-800 text-white hover:text-green-500">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg  "><i class="bx bx-log-out"></i></span>
+          <span class="text-sm font-medium">Connect to MongoDB</span>
+        </a>
+      </li>
     </ul>
 </div>
 <!-- </nav> -->
@@ -65,7 +71,13 @@
 <!-- default system -->
 <div class="  px-5  mt-10 w-full h-full">
     <div class="bg-white w-ful h-32   shadow-sm hover:shadow-md  rounded-md">
-        <span class="inline-flex items-center p-10  justify-center align-middle text-xl text-gray-600"><p class=" text-4xl ">22.3 °c</p><img src="../assets/icon/weather/day/113.png" alt="" srcset=""></i></span>
+      <div class="  pl-16   ">
+        <span class="inline-flex items-center p-10  justify-center align-middle text-xl text-gray-600"><p class=" text-4xl celcius"  >Weather</p><p class="text-xs text-white p-1 bg-green-500 rounded-xl">weather</p>  </span>
+        <span class="inline-flex items-center p-10  justify-center align-middle text-xl text-gray-600"><p class=" text-4xl humidity" >humidity</p><p class="text-xs text-white p-1 bg-green-500 rounded-xl">humidity</p> </span>
+        <span class="inline-flex items-center p-10  justify-center align-middle text-xl text-gray-600"><p class=" text-4xl windspeed" >wind</p><p class="text-xs text-white p-1 bg-green-500 rounded-xl">wind-speed</p> </span>
+        <span class="inline-flex items-center p-10  justify-center align-middle text-xl text-gray-600"><p class=" text-4xl pressure" >Pressure</p><p class="text-xs text-white p-1 bg-green-500 rounded-xl">pressure</p> </span>
+
+      </div>
     </div>
 <div class="inline-flex my-6 h-auto ">
 <div class="w-[720px] h-96 bg-white shadow-sm rounded-md hover:shadow-md"></div>
@@ -84,10 +96,10 @@
 <!-- main div closed here -->
 </div>
 
-<div class="">
-
-</div>
-
+ <!--mobile-menu-->
+ <div class="text-black text-2xl text-center lg:hidden sm:block">
+  <p>This webpage can not diplay on a mobile</p>
+ </div>
 <div class="btm-nav lg:hidden bg-white">
     <button class="text-lg text-gray-700">
         <i class="bx bx-user-check"></i>
@@ -99,7 +111,58 @@
         <i class="bx bx-log-out"></i>
         </button>
   </div>
+<!-- srcpts -->
+<script src="../authn0/authn/Data-server.js"></script>
+<script>
+// Function to get weather information
+async function getWeather(city) {
+    var res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fdd2b9289d7b31b399f475c08ffa56aa&units=metric`);
+    var data = await res.json();
+    document.querySelector('.celcius').innerHTML = Math.round(data.main.temp) + "°c";
+    document.querySelector('.humidity').innerHTML = Math.round(data.main.humidity)+ "%";
+    document.querySelector('.windspeed').innerHTML =  Math.round(data.wind.speed)+ "km/h";
+    document.querySelector('.pressure').innerHTML =  Math.round(data.main.pressure)+ "mb";
+    // console.log(data);
+}
 
+// Prompt for location tracking
+function trackLocation() {
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            const { latitude, longitude } = position.coords;
+            // Call getWeather function with city based on coordinates
+            getWeatherByCoordinates(latitude, longitude);
+        },
+        (error) => {
+            console.error("Error getting location:", error);
+        }
+    );
+}
 
+// Function to get city name based on coordinates
+async function getWeatherByCoordinates(latitude, longitude) {
+    var res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=fdd2b9289d7b31b399f475c08ffa56aa&units=metric`);
+    var data = await res.json();
+    // Call getWeather function with city name
+    getWeather(data.name);
+}
+
+// Prompt user to allow location tracking
+if (navigator.geolocation) {
+    navigator.permissions.query({ name: 'geolocation' }).then((result) => {
+        if (result.state === 'granted') {
+            // If permission granted, track location
+            trackLocation();
+        } else if (result.state === 'prompt') {
+            // If permission prompt, ask user for permission
+            alert("This site wants to track your location for better weather accuracy. Please allow.");
+            trackLocation();
+        }
+    });
+} else {
+    console.error("Geolocation is not supported by this browser.");
+}
+
+</script>
 </body>
 </html>
